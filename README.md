@@ -130,15 +130,15 @@ Mohandas Karamchand Gandhi (2 October 1869 – 30 January 1948) was an Indian la
 ## Architecture
 
 ```
-┌─────────────────────────────────────────────────────────────┐
+|-------------------------------------------------------------|
 │                Working LangChain Bot                        │
-├─────────────────────────────────────────────────────────────┤
-│  Components:                                                 │
-│  |-- ConversationBufferMemory (LangChain)                    │
-│  |-- Wikipedia API Integration                               │
-│  |-- Entity Extraction & Query Processing                    │
-│  |-- Context-aware Follow-up Handling                        │
-└─────────────────────────────────────────────────────────────┘
+|-------------------------------------------------------------|
+│  Components:                                                |
+│  |-- ConversationBufferMemory (LangChain)                   |
+│  |-- Wikipedia API Integration                              |
+│  |-- Entity Extraction & Query Processing                   |
+│  |-- Context-aware Follow-up Handling                       |
+|-------------------------------------------------------------|
 ```
 
 ## LangChain Components Used
@@ -222,13 +222,13 @@ The bot automatically extracts entities from queries:
 
 ```
 Soulpage-genai-Conversational_Knowledge_Bot/
-├── langchain_bot.py              # Main implementation (USE THIS ONE)
-├── app.py                        # Streamlit web interface
-├── requirements.txt               # Dependencies
-├── README.md                     # This file
-├── sample_conversations.md      # Example conversations
-├── .env.example                 # Environment template
-└── .gitignore                   # Git ignore rules
+|-- langchain_bot.py               # Main implementation (USE THIS ONE)
+|-- app.py                         # Streamlit web interface
+|-- requirements.txt               # Dependencies
+|-- README.md                      # This file
+|-- sample_conversations.md        # Example conversations
+|-- .env.example                   # Environment template
+|-- .gitignore                     # Git ignore rules
 ```
 
 ## Assignment Deliverables
@@ -328,4 +328,5 @@ Enable verbose output by checking memory state:
 ```python
 memory = bot.get_memory()
 print(f"Memory: {memory}")
+
 
