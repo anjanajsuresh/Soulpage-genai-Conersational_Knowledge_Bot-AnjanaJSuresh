@@ -735,11 +735,6 @@ Type 'quit' to exit anytime!"""
         
         return history
 
-
-# Alias for compatibility
-WikiBot = LangChainKnowledgeBot
-
-
 def main():
     """Main function for CLI usage."""
     
@@ -777,5 +772,6 @@ if __name__ == "__main__":
         sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
     
     main()
+
 
 
