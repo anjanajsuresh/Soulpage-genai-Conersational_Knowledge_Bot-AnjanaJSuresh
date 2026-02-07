@@ -126,7 +126,7 @@ AI:""",
         """Extract the main entity from a query using patterns."""
         query_lower = query.lower().strip()
         
-        # Patterns for entity extraction - no hardcoded entities
+        # Patterns for entity extraction
         patterns = {
             'ceo': r'ceo of\s+(.+?)(?:\?|$)',
             'president': r'president of\s+(.+?)(?:\?|$)',
@@ -777,3 +777,4 @@ if __name__ == "__main__":
         sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
     
     main()
+
